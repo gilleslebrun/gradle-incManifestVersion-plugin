@@ -25,7 +25,7 @@ uploadArchives
     {   mavenDeployer
         {   repository(url: local_repo)
                pom.groupId = "com.gilleslebrun"
-               pom.artifactId = "gradleplugin"
+               pom.artifactId = "gradle-incManifestVersion-plugin"
                pom.version = "1.0.0"
         }
     }
@@ -42,5 +42,5 @@ changelog {
     file "CHANGELOG.md"
     versionNum "1.0.0"
     versionText "Electric Isidore"
-    repoUrl "https://github.com/gilleslebrun/gradleplugin"
+    repoUrl "https://github.com/gilleslebrun/gradle-incManifestVersion-plugin"
 }
