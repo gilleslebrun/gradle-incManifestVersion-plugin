@@ -42,7 +42,7 @@ dependencies {
 
 changelog {
     file "CHANGELOG.md"
-    versionNum "$project.version"
-    versionText "Electric whale"
+    versionNum "1.0.0"
+    versionText "Electric cicada"
     repoUrl "https://github.com/gilleslebrun/gradleplugin"
 }
