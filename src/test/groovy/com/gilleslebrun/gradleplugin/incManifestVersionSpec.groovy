@@ -3,7 +3,7 @@ package com.gilleslebrun.gradleplugin
 @Grab(group='org.spockframework', module='spock-grails-support', version='0.7-groovy-2.0')
 import spock.lang.Specification
 
-class GitChangelogSpec extends Specification {
+class incManifestVersionSpec extends Specification {
     def "parseRawCommit should be null when invalid string"(){
         expect:
         commit == null

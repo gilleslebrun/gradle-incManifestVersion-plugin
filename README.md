@@ -39,13 +39,13 @@ Configuration of the `incManifestVersion` has 3 mandatory integer parameters:
 
 ```
 incManifestVersion {
- 
+
  majorVersionNumber 1  
- 
+
  minorVersionNumber 2
- 
+
  patchVersionNumber 3
-  
+
 
 ```
  will add or modify in Android Manifest: 
@@ -55,7 +55,7 @@ incManifestVersion {
  
  - `android:versionCode="autoincrementednumber"` if already defined previously.
 
- - `android:versionName="1.2.3"` whatever the previous version name.	  
+ - `android:versionName="1.2.3"` whatever the previous version name.
   
  others string and boolean parameters are optionnals, if none is provided the defaults settings will be used. Default values are detailed below.
 
@@ -63,7 +63,7 @@ incManifestVersion {
     androidManifest  "path_and_name_to_an_alternative_AndroidManifest.xml"
     //if not defined your default AndroidManifest.xml file.
  
- 	prefixVersionName  "Myapp_"
+    prefixVersionName  "Myapp_"
     //if not defined no prefix, otherwise with a prefix android:versionName="Myapp_1.2.3".
 
     withVersionCodeSuffix  true
