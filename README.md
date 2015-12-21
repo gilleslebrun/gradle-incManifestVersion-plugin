@@ -22,13 +22,16 @@ It also could add:
 Add the plugin to your `buildscript`'s `dependencies` section:
 
 
-```classpath 'com.github.gilleslebrun:git-gradleplugin:0.0.1'
+```
+classpath 'com.gilleslebrun:gradle-incManifestVersion-plugin:1.0.0'
+
 ```
 
 Apply the `incManifestVersion` plugin:
 
 ```
 apply plugin: 'incManifestVersion'
+
 ```
 
 Configure your version specs and call the `incManifestVersion` Gradle task.
@@ -46,9 +49,9 @@ incManifestVersion {
 
  patchVersionNumber 3
 
-
 ```
- will add or modify in Android Manifest: 
+
+ will add or modify in Android Manifest:
  
  
  - `android:versionCode="1"` if not defined previously.
@@ -59,7 +62,9 @@ incManifestVersion {
   
  others string and boolean parameters are optionnals, if none is provided the defaults settings will be used. Default values are detailed below.
 
+
 ``` 
+
     androidManifest  "path_and_name_to_an_alternative_AndroidManifest.xml"
     //if not defined your default AndroidManifest.xml file.
  
@@ -73,6 +78,7 @@ incManifestVersion {
     //default value false, if true with the debug suffix, android:versionName="Myapp_1.2.3-24_debug".
     
 } 
+
 ```
 
 ## License
@@ -88,5 +94,6 @@ incManifestVersion {
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+
 
 ## Changelog
